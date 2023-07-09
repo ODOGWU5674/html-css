@@ -1,0 +1,87 @@
+/* THis is style for the Hero section */
+.hero-section {
+    background-image: url(../images/background/fries.png);
+    padding: 100px;
+    height: 300px;
+    /* thi is the css building forparallax features */
+    background-attachment: fixed; /*thisb make the background image fix so it won't slide up amd down */
+    background-position: center; /*this centered the image*/
+    background-repeat: no-repeat; /*by default images repeat so by saying no repeat it won't repeat*/
+    background-size: cover; /*this will maintain the aspect ratio and prop the image */
+}
+
+h1,h3{
+    font-family: 'Roboto Slab', serif;
+}
+.hero-section>.Top-heading {
+    background: #11122b;
+    color: white;
+    padding: 0.5px 15px;
+    width: 290px;
+    border-radius: 2px;
+}
+.hero-section>.Bottom-heading{
+    background-color: gold;
+    color: #11122b;
+    padding: 0.1px 20px;
+    width: 107px;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.feature-wrapper{
+    background-image: url(../images/background/fries-multiply-bg.jpg);
+    height: 400px;
+    border-top: 10px solid white;
+    /* padding: 100; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-color: #cea135;
+    /* background-size: cover; */
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu condensed", sans-serif;
+    box-shadow: 1px -23px 24px -5px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 1px -23px 24px -5px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 1px -23px 24px -5px rgba(0,0,0,0.75) inset;
+}
+
+.feature-wrapper> .columns-wrapper{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.feature-wrapper> .columns-wrapper>.column{
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    border-bottom: 8px solid transparent;
+    border-radius: 11px;
+    transition: 1s;
+    width: 500px;
+}
+.feature-wrapper> .columns-wrapper>.column:hover{
+    
+    border-bottom: 8px solid #11122b;
+
+}
+.feature-wrapper> .columns-wrapper>.column p:hover{
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+.feature-wrapper> .columns-wrapper>.column :nth-child(1){
+    font-size: 3em;
+}
+.feature-wrapper> .columns-wrapper>.column :nth-child(2){
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+}
+.feature-wrapper> .columns-wrapper>.column :nth-child(3){
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}

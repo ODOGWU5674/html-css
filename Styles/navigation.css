@@ -1,0 +1,126 @@
+/* common nav styles */
+.navigation-wrapper {
+    height: 190px;
+    background-color: #10112b;
+    color: #cbcbcb;
+    /* flexbox container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    margin: 0px 0x;
+    /* padding-left: 100;
+    padding-right: 100;
+    padding-top: 50;
+    padding-bottom: 50; */
+
+   
+    /* left column common style */
+}
+
+.navigation-wrapper > .left-column {
+    Display: flex;
+    align-items: center;
+
+}
+.navigation-wrapper> .left-column>.icon{
+    margin-right: 15px;
+}
+.navigation-wrapper> .left-column>.icon i {
+    font-size: 2em;
+}
+.left-column > .contact-hours-wrapper {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+.contact-hours-wrapper > .phone{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+.contact-hours-wrapper > .hours {
+    font-family: 'roboto', sans-serif;
+    font-size: 10px;
+}
+ /* center common style */
+
+.navigation-wrapper>.center-column>.links-wrapper>.nav-link a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.navigation-wrapper>.center-column>.banner-image {
+    display: flex;
+    justify-content: center;
+}
+.navigation-wrapper>.center-column>.banner-image img{
+    width: 217px;
+    height: 100%;
+}
+.links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-wrapper>.center-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+
+/* right column style  */
+.navigation-wrapper>.right-column {
+    display: flex;
+    align-items: center;
+} 
+
+.navigation-wrapper> .right-column>.location-icon {
+    margin-left: 15px;
+    font-size: 2em;
+
+}
+.navigation-wrapper>.right-column>.Address-wrapper a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 15px;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(102, 99, 99);
+    transition: 0.5;
+
+}
+.navigation-wrapper>.right-column>.Address-wrapper{
+    display: flex;
+    justify-content: right;
+}
+.navigation-wrapper>.right-column>.Address-wrapper a:hover {
+    color: goldenrod;
+}
+.navigation-wrapper> .right-column>.location-icon a{
+    color: darkgray;
+    transition: 0.4s;
+
+}
+.navigation-wrapper> .right-column>.location-icon a:hover {
+color: goldenrod;
+}
+
+
+
+/* adding Animation to the test */
+.links-wrapper> .nav-link a{
+    font-family: "ubuntu cpndensed", sans-serif ;
+    color:#cbcbcb;
+    text-decoration: none; /*removed the underlines on the links */
+    transition: 0.4s;
+}
+/* added the hover effect */
+.links-wrapper> .nav-link a:hover {
+    color: goldenrod;
+    letter-spacing: 15px;
+
+}
+.links-wrapper> .nav-link {
+    width: 20px;
+    /* text-align: center; */
+} 
